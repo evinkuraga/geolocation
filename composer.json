@@ -1,5 +1,5 @@
 {
-    "name": "midnite81/geolocation",
+    "name": "evinkuraga/geolocation",
     "description": "A laravel package to hook into IP Info DB Service",
     "keywords": [
         "sms",
