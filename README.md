@@ -2,6 +2,9 @@
 
 A IP Info DB integration for Laravel
 
+# Note
+This was forked from midnite81/geolocation just so I could edit the composer file to accept guzzle ^7.0 which is required to work with later verisons of laravel 6.0. I've noticed the usage of Guzzle seems minimal, so I will either eventually tweak it to work with guzzle 7, or just add it in the composer and see what happens.
+
 # Installation
 
 This package requires PHP 5.6+, and includes a Laravel 5 Service Provider and Facade.
