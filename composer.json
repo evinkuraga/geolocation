@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Midnite81\\GeoLocation\\": "src/"
+            "Evinkuraga\\GeoLocation\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Midnite81\\GeoLocation\\Tests\\": "tests/"
+            "Evinkuraga\\GeoLocation\\Tests\\": "tests/"
         }
     },
     "extra": {

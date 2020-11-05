@@ -1,5 +1,5 @@
 <?php
-namespace Midnite81\GeoLocation\Facades;
+namespace Evinkuraga\GeoLocation\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -10,5 +10,5 @@ class GeoLocation extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor() { return 'midnite81.geolocation'; }
+    protected static function getFacadeAccessor() { return 'evinkuraga.geolocation'; }
 }

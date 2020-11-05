@@ -1,9 +1,9 @@
-# Geolocation [![Latest Stable Version](https://poser.pugx.org/midnite81/geolocation/version)](https://packagist.org/packages/midnite81/geolocation) [![Total Downloads](https://poser.pugx.org/midnite81/geolocation/downloads)](https://packagist.org/packages/midnite81/geolocation) [![Latest Unstable Version](https://poser.pugx.org/midnite81/geolocation/v/unstable)](https://packagist.org/packages/midnite81/geolocation) [![License](https://poser.pugx.org/midnite81/geolocation/license.svg)](https://packagist.org/packages/midnite81/geolocation) [![Build](https://travis-ci.org/midnite81/geolocation.svg?branch=master)](https://travis-ci.org/midnite81/geolocation) [![Coverage Status](https://coveralls.io/repos/github/midnite81/geolocation/badge.svg?branch=master)](https://coveralls.io/github/midnite81/geolocation?branch=master)
+# Geolocation [![Latest Stable Version](https://poser.pugx.org/evinkuraga/geolocation/version)](https://packagist.org/packages/evinkuraga/geolocation) [![Total Downloads](https://poser.pugx.org/evinkuraga/geolocation/downloads)](https://packagist.org/packages/evinkuraga/geolocation) [![Latest Unstable Version](https://poser.pugx.org/evinkuraga/geolocation/v/unstable)](https://packagist.org/packages/evinkuraga/geolocation) [![License](https://poser.pugx.org/evinkuraga/geolocation/license.svg)](https://packagist.org/packages/evinkuraga/geolocation) [![Build](https://travis-ci.org/evinkuraga/geolocation.svg?branch=master)](https://travis-ci.org/evinkuraga/geolocation) [![Coverage Status](https://coveralls.io/repos/github/evinkuraga/geolocation/badge.svg?branch=master)](https://coveralls.io/github/evinkuraga/geolocation?branch=master)
 
 A IP Info DB integration for Laravel
 
 # Note
-This was forked from midnite81/geolocation just so I could edit the composer file to accept guzzle ^7.0 which is required to work with later verisons of laravel 6.0. I've noticed the usage of Guzzle seems minimal, so I will either eventually tweak it to work with guzzle 7, or just add it in the composer and see what happens.
+This was forked from evinkuraga/geolocation just so I could edit the composer file to accept guzzle ^7.0 which is required to work with later verisons of laravel 6.0. I've noticed the usage of Guzzle seems minimal, so I will either eventually tweak it to work with guzzle 7, or just add it in the composer and see what happens.
 
 # Installation
 
@@ -11,9 +11,9 @@ This package requires PHP 5.6+, and includes a Laravel 5 Service Provider and Fa
 
 To install through composer include the package in your `composer.json`.
 
-    "midnite81/geolocation": "^2.0"
+    "evinkuraga/geolocation": "^2.0"
 
-Run `composer install` or `composer update` to download the dependencies or you can run `composer require midnite81/geolocation`.
+Run `composer install` or `composer update` to download the dependencies or you can run `composer require evinkuraga/geolocation`.
 
 ## Refresh Autoloader
 
@@ -27,7 +27,7 @@ in `app/config/app.php`.
 
     'providers' => [
 
-      Midnite81\GeoLocation\GeoLocationServiceProvider::class
+      Evinkuraga\GeoLocation\GeoLocationServiceProvider::class
               
     ];
     
@@ -35,12 +35,12 @@ Add the `GeoLocation` facade to your aliases array.
 
     'aliases' => [
 
-      'GeoLocation' => Midnite81\GeoLocation\Facades\GeoLocation::class,
+      'GeoLocation' => Evinkuraga\GeoLocation\Facades\GeoLocation::class,
       
     ];
     
 Publish the config and migration files using 
-`php artisan vendor:publish --provider="Midnite81\GeoLocation\GeoLocationServiceProvider"`
+`php artisan vendor:publish --provider="Evinkuraga\GeoLocation\GeoLocationServiceProvider"`
     
 # Configuration File
 
@@ -60,7 +60,7 @@ Before using this package you must get an API Key from IP Info DB. Please access
 
 # Example Usage
 
-    use Midnite81\GeoLocation\Contracts\Services\GeoLocation;
+    use Evinkuraga\GeoLocation\Contracts\Services\GeoLocation;
     use Illuminate\Http\Request;
     
     public function index(GeoLocation $geo, Request $request) 

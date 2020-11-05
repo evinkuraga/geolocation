@@ -1,8 +1,8 @@
 <?php
 
-namespace Midnite81\GeoLocation\Services\Tests;
+namespace Evinkuraga\GeoLocation\Services\Tests;
 
-use Midnite81\GeoLocation\Services\IpLocation;
+use Evinkuraga\GeoLocation\Services\IpLocation;
 use PHPUnit\Framework\TestCase;
 
 class IpLocationTest extends TestCase

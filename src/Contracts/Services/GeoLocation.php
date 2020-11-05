@@ -1,6 +1,6 @@
 <?php
 
-namespace Midnite81\GeoLocation\Contracts\Services;
+namespace Evinkuraga\GeoLocation\Contracts\Services;
 
 interface GeoLocation
 {
@@ -10,7 +10,7 @@ interface GeoLocation
      *
      * @param $ip
      * @param $precision
-     * @return Midnite81\GeoLocation\Services\IpLocation
+     * @return Evinkuraga\GeoLocation\Services\IpLocation
      */
     public function get($ip, $precision = 'city');
 

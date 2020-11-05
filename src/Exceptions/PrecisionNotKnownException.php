@@ -1,6 +1,6 @@
 <?php
 
-namespace Midnite81\GeoLocation\Exceptions;
+namespace Evinkuraga\GeoLocation\Exceptions;
 
 class PrecisionNotKnownException extends \Exception
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Midnite81\GeoLocation\Services;
+namespace Evinkuraga\GeoLocation\Services;
 
 class IpLocation
 {

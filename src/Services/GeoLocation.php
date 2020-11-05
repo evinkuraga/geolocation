@@ -1,10 +1,10 @@
 <?php
-namespace Midnite81\GeoLocation\Services;
+namespace Evinkuraga\GeoLocation\Services;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Cache;
-use Midnite81\GeoLocation\Contracts\Services\GeoLocation as GeoLocationContract;
-use Midnite81\GeoLocation\Exceptions\PrecisionNotKnownException;
+use Evinkuraga\GeoLocation\Contracts\Services\GeoLocation as GeoLocationContract;
+use Evinkuraga\GeoLocation\Exceptions\PrecisionNotKnownException;
 
 class GeoLocation implements GeoLocationContract
 {

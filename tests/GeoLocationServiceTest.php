@@ -1,8 +1,8 @@
 <?php
-namespace Midnite81\GeoLocation\Tests;
+namespace Evinkuraga\GeoLocation\Tests;
 
 use Illuminate\Container\Container;
-use Midnite81\GeoLocation\GeoLocationServiceProvider;
+use Evinkuraga\GeoLocation\GeoLocationServiceProvider;
 use PHPUnit\Framework\TestCase;
 
 class GeoLocationServiceTest extends TestCase
@@ -25,8 +25,8 @@ class GeoLocationServiceTest extends TestCase
      */
     public function provides_returns_all_of_the_provided_services()
     {
-        $this->assertContains('midnite81.geolocation', $this->serviceProvider->provides());
-        $this->assertContains('Midnite81\GeoLocation\Contracts\Services\GeoLocation', $this->serviceProvider->provides());
+        $this->assertContains('evinkuraga.geolocation', $this->serviceProvider->provides());
+        $this->assertContains('Evinkuraga\GeoLocation\Contracts\Services\GeoLocation', $this->serviceProvider->provides());
     }
 
     /**
@@ -35,8 +35,8 @@ class GeoLocationServiceTest extends TestCase
     public function test_geolocation_can_be_resolved_from_the_container()
     {
         $this->serviceProvider->register();
-        $this->assertInstanceOf('Midnite81\GeoLocation\Contracts\Services\GeoLocation', $this->app->make('Midnite81\GeoLocation\Contracts\Services\GeoLocation'));
-        $this->assertInstanceOf('Midnite81\GeoLocation\Contracts\Services\GeoLocation', $this->app->make('midnite81.geolocation'));
+        $this->assertInstanceOf('Evinkuraga\GeoLocation\Contracts\Services\GeoLocation', $this->app->make('Evinkuraga\GeoLocation\Contracts\Services\GeoLocation'));
+        $this->assertInstanceOf('Evinkuraga\GeoLocation\Contracts\Services\GeoLocation', $this->app->make('evinkuraga.geolocation'));
     }
 
     protected function getConfig()

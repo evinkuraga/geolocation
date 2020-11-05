@@ -2,7 +2,7 @@
 namespace Evinkuraga\GeoLocation;
 
 use Illuminate\Support\ServiceProvider;
-use Midnite81\GeoLocation\Services\GeoLocation;
+use Evinkuraga\GeoLocation\Services\GeoLocation;
 
 class GeoLocationServiceProvider extends ServiceProvider
 {
