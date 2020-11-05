@@ -1,5 +1,5 @@
 <?php
-namespace Midnite81\GeoLocation;
+namespace Evinkuraga\GeoLocation;
 
 use Illuminate\Support\ServiceProvider;
 use Midnite81\GeoLocation\Services\GeoLocation;
@@ -33,11 +33,11 @@ class GeoLocationServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('midnite81.geolocation', function ($app) {
+        $this->app->singleton('evinkuraga.geolocation', function ($app) {
             return new GeoLocation();
         });
 
-        $this->app->alias('midnite81.geolocation', 'Midnite81\GeoLocation\Contracts\Services\GeoLocation');
+        $this->app->alias('evinkuraga.geolocation', 'Evinkuraga\GeoLocation\Contracts\Services\GeoLocation');
     }
     /**
      * Get the services provided by the provider.
@@ -46,6 +46,6 @@ class GeoLocationServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['midnite81.geolocation', 'Midnite81\GeoLocation\Contracts\Services\GeoLocation'];
+        return ['evinkuraga.geolocation', 'Evinkuraga\GeoLocation\Contracts\Services\GeoLocation'];
     }
 }
